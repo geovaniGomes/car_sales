@@ -18,7 +18,7 @@ from helpers.methods_geral import check_files_exists,  generate_reference_month
 dag = DAG(
     dag_id="data_ingestion",
     description="ingestion data to processing",
-   start_date=datetime(2023, 6, 7),
+    start_date=datetime(2023, 6, 7),
     schedule_interval='*/15 * * * *'
 )
 
